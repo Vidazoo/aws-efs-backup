@@ -150,3 +150,6 @@ ENV/
 # mypy
 .mypy_cache/
 
+.gitignore
+.idea/
+Dockerfile
