@@ -14,4 +14,4 @@ tar -zcvf $EFS_NAME.tar.gz /efs
 umount /efs
 
 # copy everything to s3
-aws s3 cp $EFS_NAME.tar.gz 3://$S3_BUCKET/efs/$EFS_NAME.`date +"%Y%m%d"`.tar.gz
+aws s3 cp $EFS_NAME.tar.gz s3://$S3_BUCKET/efs/$EFS_NAME.`date +"%Y%m%d"`.tar.gz
