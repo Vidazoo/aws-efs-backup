@@ -152,4 +152,3 @@ ENV/
 
 .gitignore
 .idea/
-Dockerfile
