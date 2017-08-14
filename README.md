@@ -2,6 +2,9 @@
 simple container that takes an efs and backups it to s3, requires `--privileged` tag due to mounting the efs
 docker version can be found at docker hub at https://hub.docker.com/r/vidazoohub/aws-efs-backup/
 
+note this container has to run inside the AWS VPC where the EFS you want to backup is located as it mounts it & that's
+how EFS works.
+
 requires the following envvars:
 ````````
 EFS_ID = the EFS id
