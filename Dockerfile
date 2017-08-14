@@ -5,7 +5,7 @@ FROM python:2.7-alpine
 RUN apk add --no-cache nfs-utils
 
 # install aws cli
-RUN pip install aws-cli
+RUN pip install awscli
 
 # create mount point
 RUN mkdir /efs
